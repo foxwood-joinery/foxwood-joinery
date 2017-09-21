@@ -1,6 +1,6 @@
-$message = $args[0]
-
 $siteName = "foxwood-joinery"
+
+$message = $args[0]
 
 # Commit changes.
 git add -A
@@ -13,14 +13,6 @@ cd ..
 cd "$siteName.github.io"
 
 # Commit changes.
-git init
-
-git remote add origin "https://github.com/$siteName/$siteName.github.io"
-
-git pull origin master
-
-git add .
-
+git add -A
 git commit -am $message
-
-git push -u origin master
+git push origin master
