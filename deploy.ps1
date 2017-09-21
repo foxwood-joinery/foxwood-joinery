@@ -17,6 +17,10 @@ git init
 
 git remote add origin "https://github.com/$siteName/$siteName.github.io"
 
+git pull origin master
+
 git add -A
+
 git commit -am $message
+
 git push origin master
