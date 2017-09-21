@@ -19,8 +19,8 @@ git remote add origin "https://github.com/$siteName/$siteName.github.io"
 
 git pull origin master
 
-git add -A
+git add .
 
 git commit -am $message
 
-git push origin master
+git push -u origin master
