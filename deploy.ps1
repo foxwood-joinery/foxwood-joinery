@@ -8,8 +8,7 @@ git push origin master
  hugo -d ../foxwood-joinery.github.io
 
 cd ..
-cd foxwood-joinery
-.github.io
+cd foxwood-joinery.github.io
 
 # Commit changes.
 git add -A
