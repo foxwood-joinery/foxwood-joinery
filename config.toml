@@ -17,8 +17,8 @@ googleAnalytics = ""
 
   # To provide some metadata for search engines feel free to add a few
   # information about you and your website.
-  name = "Your name"
-  description = "Your description"
+  name = "Foxwood Joinery"
+  description = "Foxwood Joinery provide qualified CSCS joiners for a wide range of new build and refurbishment projects."
 
   # Link custom assets relative to /static
   custom_css = []
@@ -45,13 +45,15 @@ googleAnalytics = ""
 
   # Navigation
   [params.navigation]
-    brand = "The Agency"
+    brand = ""
+   
     # Optional logo as brand stored in img/
-    #logo = "logo.svg"
-    services = "Services"
-    portfolio = "Portfolio"
+    logo = "logo.svg"
     about = "About"
-    team = "Team"
+    services = "Our Services"
+    portfolio = "Gallery"
+    team = "Testimonials"
+    healthSafety = "Health & Safety"
     contact = "Contact"
 
     # Add custom links. Those can be pre- and postpended to the default menu above.
@@ -65,10 +67,10 @@ googleAnalytics = ""
     #  weight = 10
 
     # postpended links
-    [[menu.postpend]]
-      url = "http://gohugo.io"
-      name = "External link"
-      weight = 10
+    #[[menu.postpend]]
+    #  url = "http://gohugo.io"
+    #  name = "External link"
+    #  weight = 10
 
 
   # Hero section
@@ -84,26 +86,45 @@ googleAnalytics = ""
   [params.services]
     enable = true
     title = "Services"
-    subtitle = "Lorem ipsum dolor sit amet consectetur."
+    subtitle = "<p>Foxwood Joinery provide qualified CSCS joiners for a wide range of new build and refurbishment projects.<br/>We can provide Labour Only, Labour and Fixings or Supply and Labour Prices.</p>"
+    bottomSubtitle = "<p>We work alongside main contractors and architects from the start of the project to the finish. <br/>We have an exceptional on and off site management team providing support throughout all projects undertaken.</p>"
 
     [[params.services.row]]
 
     [[params.services.row.list]]
-      icon = "fa-shopping-cart"
-      title = "E-Commerce"
-      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      icon = "fa-question"
+      title = "Joist and Flooring"
+      description = ""
       url = "#"
 
     [[params.services.row.list]]
-      icon = "fa-laptop"
-      title = "Responsive Design"
-      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      icon = "fa-question"
+      title = "Trussed Roof Structures"
+      description = ""
       url = "#"
 
     [[params.services.row.list]]
-      icon = "fa-lock"
-      title = "Web"
-      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      icon = "fa-question"
+      title = "Traditional Roof"
+      description = ""
+      url = "#"
+
+    [[params.services.row.list]]
+      icon = "fa-question"
+      title = "Kitchens"
+      description = ""
+      url = "#"
+
+    [[params.services.row.list]]
+      icon = "fa-question"
+      title = "Cladding"
+      description = ""
+      url = "#"
+
+    [[params.services.row.list]]
+      icon = "fa-question"
+      title = "IPS Panel/Toilet Cubicles"
+      description = ""
       url = "#"
 
   # Portfolio section
@@ -114,7 +135,7 @@ googleAnalytics = ""
     # at the root of this Hugo site.
     # For more informtion take a look at the README.
     title = "Portfolio"
-    subtitle = "Lorem ipsum dolor sit amet consectetur."
+    subtitle = "Do you want to write anything here?"
 
     [params.portfolio.modal]
       client = "Client"
@@ -127,88 +148,48 @@ googleAnalytics = ""
   [params.about]
     enable = true
     title = "About"
-    subtitle = "Lorem ipsum dolor sit amet consectetur."
+    subtitle = "<p>Foxwood Joinery is a family run Company established in 2010.</p> <p>Directors John and James along with their skilled and ever increasing workforce provide a high-quality joinery service for the construction industry.</p><p>We take pride in our work and are dedicated to completing projects within budget and in line with the schedules.We are based in the Northwest and have covered many other regions throughout the Country.</p>"
+    endpoint = "Be part<br>of our<br>story!"
+
+    
+    # About section
+  [params.healthSafety]
+    enable = true
+    title = "Health & Safety"
+    subtitle = "We work in conjunction with Rawlings Safety and Training Consultancy Services to ensure that the Company is up-to-date with Safety and Training."
     endpoint = "Be part<br>of our<br>story!"
 
     # The events will be listed from the top to the bottom.
     # All images are stored under 'static/img/about'.
     # Replace them with your own.
-    [[params.about.events]]
-      img = "1.jpg"
-      date = "2009-2011"
-      title = "Our Humble Beginnings"
-      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-
-    [[params.about.events]]
-      img = "2.jpg"
-      date = "March 2011"
-      title = "An Agency is Born"
-      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-
-    [[params.about.events]]
-      img = "3.jpg"
-      date = "December 2012"
-      title = "Our Humble Beginnings"
-      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-
-    [[params.about.events]]
-      img = "4.jpg"
-      date = "July 2014"
-      title = "Phase Two Expansion"
-      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-
-
+   
   # Team section
   [params.team]
     enable = true
     # Possibility to center items
     #center = true
-    title = "Our amazing team"
-    subtitle = "Lorem ipsum dolor sit amet consectetur."
-    description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde."
+    title = "Testimonials"
+    subtitle = "Do youi want to write anything here?"
+    description = ""
 
     # All team member's pictures are stored under 'static/img/team'.
     # Replace them with your own too.
     # Suggestion: Image size should be at least 360px*360px or the alignment might be affected.
     [[params.team.members]]
-      img = "1.jpg"
-      name = "Kay Garland"
-      position = "Lead Designer"
-      reportsTo = "CTO"
-      livesIn = "[Munich, Germany](#some-maps-url)"
-      scope = [
-        "UX for [member dashboard](#)",
-        "Maintainer for [awesome-project](#)",
-        "Open Source [community management](#)"
-      ]
-      # For bio markdown and even multiline strings are available.
-      bio = """Kay is an awesome Lead Designer with heaps of experience in the field of UX.
-She worked at Pied Piper for years until they went belly up."""
-      social = [
-        ["fa-twitter", "#"],
-        ["fa-facebook", "#"],
-        ["fa-linkedin", "#"]
-      ]
-
+      
+      name = "Darren Weeks"
+      position = "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur."
+     
     [[params.team.members]]
-      img = "2.jpg"
-      name = "Larry Parker"
-      position = "Lead Marketer"
-      social = [
-        ["fa-twitter", "#"],
-        ["fa-facebook", "#"],
-        ["fa-linkedin", "#"]
-      ]
+      
+      name = "Jim Clay"
+      position = "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur."
 
-    [[params.team.members]]
-      img = "3.jpg"
-      name = "Diana Pertersen"
-      position = "Lead Developer"
-      social = [
-        ["fa-twitter", "#"],
-        ["fa-facebook", "#"],
-        ["fa-linkedin", "#"]
-      ]
+      [[params.team.members]]
+      
+      name = "Stewart Meechan"
+      position = "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur."
+
 
   # Client section
     [params.clients_list]
@@ -241,8 +222,33 @@ She worked at Pied Piper for years until they went belly up."""
   [params.contact]
     enable = true
     title = "Contact us"
-    subtitle  = "Lorem ipsum dolor sit amet consectetur."
+    subtitle  = "If you would like to contact Foxwood Joinery to discuss your joinery needs then please contact us."
     buttonText = "Send message"
+
+    [[params.contact.address]]
+    text = "Foxwood Joinery"
+
+    [[params.contact.address]]
+    text = "87 Foxwood"
+
+    [[params.contact.address]]
+    text = "St Helens"
+
+    [[params.contact.address]]
+    text = "Merseyside"
+
+    [[params.contact.address]]
+    text = "WA9 5UH"
+
+    [[params.contact.address]]
+    text = "0151 493 2324"
+
+    [[params.contact.address]]
+    text = "07818063977"
+
+    [[params.contact.address]]
+    text = "info@foxwoodjoineryltd.co.uk"
+
 
     # Since this template is static, the contact form uses www.formspree.io as a
     # proxy. The form makes a POST request to their servers to send the actual
@@ -262,7 +268,7 @@ She worked at Pied Piper for years until they went belly up."""
     # add some custom JS script to finish the implementation.
     # postURL = "https://example.com/mailout/"
 
-    email = "your@email.com"
+    email = "info@foxwoodjoineryltd.co.uk"
 
     # Success and error message overwrite for async contact form
     #thanks = "Thank you for awesomely contacting us."
