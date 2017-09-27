@@ -48,7 +48,7 @@ googleAnalytics = ""
     brand = ""
    
     # Optional logo as brand stored in img/
-    logo = "logo.svg"
+    logo = "Foxwood-logo1.jpg"
     about = "About"
     services = "Our Services"
     portfolio = "Gallery"
