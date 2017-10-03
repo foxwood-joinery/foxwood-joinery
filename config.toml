@@ -45,10 +45,10 @@ googleAnalytics = ""
 
   # Navigation
   [params.navigation]
-    brand = ""
-   
+    brand1 = "FOXWOOD"   
+    brand2 = "JOINERY"
     # Optional logo as brand stored in img/
-    logo = "Foxwood-logo1.jpg"
+    logo = "logo1.png"
     about = "About"
     services = "Our Services"
     portfolio = "Gallery"
